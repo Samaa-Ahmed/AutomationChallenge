@@ -13,27 +13,7 @@ Allure: Reporting tool for generating test reports.
 GitHub Actions: CI/CD pipeline for automating workflows.
 
 # 🔧 Project Structure
-AutomationChallenge/
-├── .github/
-│   └── workflows/             
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── com/
-│   │           └── vodafone/
-│   │               ├── drivers/       
-│   │               ├── pages/         
-│   │               └── utils/         
-│   └── test/
-│       └── java/
-│           └── com/
-│               └── vodafone/
-│                   └── tests/        
-├── test-outputs/                
-│   ├── allure-results/           
-│  
-├── pom.xml                        
-└── testng.xml                     
+<img src="https://github.com/user-attachments/assets/bd7b27c2-2277-4eb7-9c53-11a40aa6c2a1" alt="Automation Framework Diagram" width="600" />
 
 
 # ✅ Highlights
