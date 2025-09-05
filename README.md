@@ -1,8 +1,7 @@
-
+# 🧪 Automation Challenge
 This repository contains an automation framework developed using Java, Maven, TestNG, and Allure. It is designed to automate web application testing, providing insights into test execution and results.
 
-🛠️ Technologies Used
-
+# 🛠️ Technologies used
 Java: Programming language for test scripts.
 
 Maven: Build automation tool.
@@ -13,8 +12,7 @@ Allure: Reporting tool for generating test reports.
 
 GitHub Actions: CI/CD pipeline for automating workflows.
 
-🔧 Project Structure
-
+# 🔧 Project Structure
 AutomationChallenge/
 ├── .github/
 │   └── workflows/             
@@ -38,8 +36,7 @@ AutomationChallenge/
 └── testng.xml                     
 
 
-✅ Highlights
-
+# ✅ Highlights
 Modular and reusable test scripts
 
 Data-driven testing support
