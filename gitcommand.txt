@@ -1,2 +1,10 @@
 1. git init > Initialize a new Git repository
-2. git add . > Add all files to the staging area
+2. git add <file> stage a file or commit || git add . > Add all files to the staging area
+3. git commit -m "commit message" > Commit the staged changes
+4. git status > Check the status of the repository
+5. git log > View the commit history
+6. git diff > View the differences between commits or files
+7. git branch > List all branches
+8. git rm --cached . -r > Remove all files from the staging area
+9. git reset --hard HEAD > Discard all changes and restore the repository to its last commit
+10. git checkout -b <branch-name> > Create and switch to a new branch
