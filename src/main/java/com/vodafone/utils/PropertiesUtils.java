@@ -14,6 +14,8 @@ public class PropertiesUtils
     }
     public final static String PROPERTIES_PATH = "src/main/resources/";
 
+    private static final Properties properties = loadProperties();
+
     public static Properties loadProperties() {
         try {
             Properties properties = new Properties();
@@ -40,10 +42,18 @@ public class PropertiesUtils
     public static String getPropertyValue(String key) {
 
         try {
-            return System.getProperty(key);
+            String value = System.getProperty(key);
+            if (value != null && !value.isEmpty()) {
+                return value;
+            }
+            if (properties != null && properties.getProperty(key) != null) {
+                return properties.getProperty(key);
+            }
+            LogsUtils.error("Property not found: " + key);
+            return "";
         }
         catch (Exception e) {
-            LogsUtils.error(e.getMessage());
+            LogsUtils.error("Error reading property " + key + ": " + e.getMessage());
             return "";
         }
     }

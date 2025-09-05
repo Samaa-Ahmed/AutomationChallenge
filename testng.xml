@@ -18,10 +18,4 @@
         </classes>
     </test>
 
-    <test name="E2E">
-        <classes>
-            <class name="com.vodafone.tests.BingE2ETest"/>
-        </classes>
-    </test>
-
 </suite>

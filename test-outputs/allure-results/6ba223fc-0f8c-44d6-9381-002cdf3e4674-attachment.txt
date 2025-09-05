@@ -1,0 +1,33 @@
+[INFO] - [05-09-2025 10:42:28] [main] [com.vodafone.Listners.TestNGListeners] - Test execution started
+[INFO] - [05-09-2025 10:42:28] [main] [com.vodafone.utils.PropertiesUtils] - Loading Properties File Data
+[INFO] - [05-09-2025 10:42:28] [main] [com.vodafone.utils.PropertiesUtils] - Loading Properties File Data
+[ERROR] - [05-09-2025 10:42:28] [main] [com.vodafone.utils.FilesUtils] - 1 exception(s): [org.apache.commons.io.IOIndexedException: IOException #1: Cannot delete file: test-outputs\logs\log_2025-09-05_10-42-26.log]
+[INFO] - [05-09-2025 10:42:32] [main] [com.vodafone.drivers.DriverManager] - Driver is created: Edge
+[INFO] - [05-09-2025 10:42:33] [main] [com.vodafone.utils.BrowserActions] - Navigated to: https://www.bing.com/
+[DEBUG] - [05-09-2025 10:42:34] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['search']['term']
+[INFO] - [05-09-2025 10:42:35] [main] [com.vodafone.utils.ElementActions] - Finding the element : By.name: q
+[INFO] - [05-09-2025 10:42:35] [main] [com.vodafone.utils.ElementActions] - Finding the element : By.name: q
+[INFO] - [05-09-2025 10:42:35] [main] [com.vodafone.utils.ElementActions] - Data Entered: Vodafone in the to field : By.name: q
+[INFO] - [05-09-2025 10:42:35] [main] [com.vodafone.utils.ElementActions] - Finding the element : By.name: q
+[DEBUG] - [05-09-2025 10:42:37] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['search']['term']
+[INFO] - [05-09-2025 10:42:37] [main] [com.vodafone.utils.BrowserActions] - Current URL: https://www.bing.com/search?q=Vodafone&form=QBLH&sp=-1&lq=0&pq=&sc=0-0&qs=n&sk=&cvid=C506A98FC3974CB2807BB5B0837DFF49
+[INFO] - [05-09-2025 10:42:37] [main] [com.vodafone.utils.Validations] - Validating TrueURL does not indicate a Bing search results page for: Vodafone | Current URL: https://www.bing.com/search?q=Vodafone&form=QBLH&sp=-1&lq=0&pq=&sc=0-0&qs=n&sk=&cvid=C506A98FC3974CB2807BB5B0837DFF49
+[INFO] - [05-09-2025 10:42:38] [main] [com.vodafone.utils.AllureUtils] - Logs attached to allure report
+[INFO] - [05-09-2025 10:42:38] [main] [com.vodafone.Listners.TestNGListeners] - Test is successful: searchVodafone
+[INFO] - [05-09-2025 10:42:38] [main] [com.vodafone.utils.ElementActions] - Finding elements by locator: By.xpath: //div[h2[contains(text(),'Related searches')]]
+[INFO] - [05-09-2025 10:42:38] [main] [com.vodafone.utils.Validations] - Validating EqualsRelated search sections count mismatch!Actual: 2Expected: 2
+[DEBUG] - [05-09-2025 10:42:38] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['search']['term']
+[INFO] - [05-09-2025 10:42:38] [main] [com.vodafone.utils.ElementActions] - Finding elements by locator: By.xpath: //li[@class='b_algo']//p
+[INFO] - [05-09-2025 10:42:39] [main] [com.vodafone.utils.Validations] - Validating TrueExpected at least 2 results with keyword 'Vodafone' in snippet, but found: 6
+[INFO] - [05-09-2025 10:42:40] [main] [com.vodafone.utils.AllureUtils] - Logs attached to allure report
+[INFO] - [05-09-2025 10:42:40] [main] [com.vodafone.Listners.TestNGListeners] - Test is successful: validatePage1results
+[INFO] - [05-09-2025 10:42:40] [main] [com.vodafone.utils.ElementActions] - Finding the element : By.xpath: //a[@aria-label='Page 2']
+[INFO] - [05-09-2025 10:42:41] [main] [com.vodafone.utils.ElementActions] - Clicked element using JS: By.xpath: //a[@aria-label='Page 2']
+[INFO] - [05-09-2025 10:42:41] [main] [com.vodafone.pages.BingResultsPage] - Navigated to page: 2
+[INFO] - [05-09-2025 10:42:41] [main] [com.vodafone.utils.ElementActions] - Finding elements by locator: By.xpath: //li[@class='b_algo']
+[INFO] - [05-09-2025 10:42:41] [main] [com.vodafone.utils.AllureUtils] - Logs attached to allure report
+[INFO] - [05-09-2025 10:42:41] [main] [com.vodafone.Listners.TestNGListeners] - Test is successful: goToPageTwo
+[INFO] - [05-09-2025 10:42:41] [main] [com.vodafone.utils.ElementActions] - Finding the element : By.xpath: //a[@aria-label='Page 3']
+[INFO] - [05-09-2025 10:42:41] [main] [com.vodafone.utils.ElementActions] - Clicked element using JS: By.xpath: //a[@aria-label='Page 3']
+[INFO] - [05-09-2025 10:42:41] [main] [com.vodafone.pages.BingResultsPage] - Navigated to page: 3
+[INFO] - [05-09-2025 10:42:41] [main] [com.vodafone.utils.ElementActions] - Finding elements by locator: By.xpath: //li[@class='b_algo']
