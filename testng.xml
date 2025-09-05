@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MyTestSuite" parallel="tests" thread-count="2">
+
+    <test name="VodafoneSearch_Full">
+        <classes>
+            <class name="com.vodafone.tests.TC001_SearchNavigation"/>
+            <class name="com.vodafone.tests.TC002_RelatedSearchesSection"/>
+            <class name="com.vodafone.tests.TC003_CountResultsOnPage2"/>
+            <class name="com.vodafone.tests.TC004_CompareResultsPage2And3"/>
+        </classes>
+    </test>
+
+    <test name="VodafoneSearch_Partial">
+        <classes>
+            <class name="com.vodafone.tests.TC001_SearchNavigation"/>
+            <class name="com.vodafone.tests.TC002_RelatedSearchesSection"/>
+        </classes>
+    </test>
+
+</suite>
