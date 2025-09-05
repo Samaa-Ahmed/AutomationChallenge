@@ -9,13 +9,13 @@ on:
       - main
 
 jobs:
-  test:
+  selenium-tests:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        browser: [chrome, edge]
-        java-version: [21]
+        browser: [chrome, edge]   # Browsers to run tests
+        java-version: [23]        # JDK version
 
     steps:
       - name: Checkout repository
@@ -35,5 +35,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      - name: Build and run tests
-        run: mvn clean test -Dbrowser=${{ matrix.browser }}
+      - name: Install dependencies
+        run: mvn clean install -DskipTests
+
+      - name: Run Selenium tests
+        run: mvn test -Dbrowser=${{ matrix.browser }}
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results-${{ matrix.browser }}
+          path: target/surefire-reports/
